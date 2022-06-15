@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<br>
+<h2> Plaza </h2>
+<br>
+{% for Plaza in plaza_list %}
+<div class="Plaza">
+    <a href="plaza/{{Plaza.id}}"><h4>{{ Plaza.naziv }}</h4></a>
+    Plaza: {{Plaza.naziv}}
+</div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    
+    <h1>Navigacija</h1>
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="plovilo">Plovilo</a></li>
+            <li><a href="korisnik">Korisnik</a></li>
+            <li><a href="plaza">Plaza</a></li>
+            
+        </ul>
+        {% endblock %}
+    </div>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    
+</body>
+</html>

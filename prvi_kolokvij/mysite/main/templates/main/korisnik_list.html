@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<br>
+<h2> Korisnik </h2>
+<br>
+{% for Korisnik in korisnik_list %}
+<div class="Korisnik">
+    <h4>{{ Korisnik.ime }}</h4>
+    Korisnik: {{Korisnik.ime}}
+</div>
+{% endfor %}
+{% endblock %}

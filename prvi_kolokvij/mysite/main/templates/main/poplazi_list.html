@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<br>
+<h2> Po plazi </h2>
+<br>
+{% for Korisnik in korisnik_list %}
+<div class="PoPlazi">
+    <h4>{{ Korisnik.ime }}</h4>
+    Korisnik: {{Korisnik.ime}}
+    Plaza: {{Korisnik.plaza}}, {{Korisnik.plaza.naziv}}
+</div>
+{% endfor %}
+{% endblock %}

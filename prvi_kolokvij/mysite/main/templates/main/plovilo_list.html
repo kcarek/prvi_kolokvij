@@ -1,0 +1,24 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<br>
+<h2> Plovilo </h2>
+<br>
+{% for Plovilo in plovilo_list %}
+<div class="Plovilo">
+    <h4>{{ Plovilo.proizvodac }}</h4>
+    Plovilo proizvodac: {{Plovilo.proizvodac}}
+    
+
+    <h4>{{ Plovilo.model }}</h4>
+    Plovilo model: {{Plovilo.model}}
+
+    <h4>{{ Plovilo.godina_proizvodnje }}</h4>
+    Plovilo godina proizvodnje: {{Plovilo.godina_proizvodnje}}
+
+    Iznajmljen : {{Plovilo.iznajmljen}}
+</div>
+{% endfor %}
+{% endblock %}
+
+
+
